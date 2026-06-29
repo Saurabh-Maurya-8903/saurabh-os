@@ -3,7 +3,7 @@ import Hero from "@/components/hero/Hero";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#09090B]">
+    <main className="relative min-h-screen overflow-hidden bg-black">
       <Background />
 
       <div className="relative z-10">

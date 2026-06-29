@@ -1,18 +1,20 @@
+import Aurora from "./Aurora";
+import Grid from "./Grid";
+import Noise from "./Noise";
+import Spotlight from "./Spotlight";
+
 export default function Background() {
   return (
     <>
-      {/* Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#09090B] via-[#111827] to-black" />
+      <div className="absolute inset-0 bg-[#09090B]" />
 
-      {/* Grid */}
-      <div
-        className="
-        absolute inset-0 opacity-20
-        bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),
-        linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)]
-        bg-[size:40px_40px]
-      "
-      />
+      <Aurora />
+
+      <Spotlight />
+
+      <Grid />
+
+      <Noise />
     </>
   );
 }
