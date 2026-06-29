@@ -1,13 +1,14 @@
 type BootMessageProps = {
   message: string;
 };
+import { ArrowRight, Badge, Download, Heading, Text } from "lucide-react";
 
 export default function BootMessage({
   message,
 }: BootMessageProps) {
   return (
-    <p className="mt-8 font-mono text-lg text-zinc-400">
+    <Text className="mt-8 font-mono text-lg text-zinc-400">
       {message}
-    </p>
+    </Text>
   );
 }

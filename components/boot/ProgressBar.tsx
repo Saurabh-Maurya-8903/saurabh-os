@@ -1,7 +1,7 @@
 type ProgressBarProps = {
   progress: number;
 };
-
+import { ArrowRight, Badge, Download, Heading, Text } from "lucide-react";
 export default function ProgressBar({
   progress,
 }: ProgressBarProps) {
@@ -16,9 +16,9 @@ export default function ProgressBar({
         />
       </div>
 
-      <p className="mt-3 text-center font-mono text-zinc-400">
+      <Text className="mt-3 text-center font-mono text-zinc-400">
         {progress}%
-      </p>
+      </Text>
     </div>
   );
 }

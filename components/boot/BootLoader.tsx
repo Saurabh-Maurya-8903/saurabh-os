@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import BootMessage from "./BootMessage";
 import ProgressBar from "./ProgressBar";
-
+import { ArrowRight, Badge, Download, Heading, Text } from "lucide-react";
 const bootMessages = [
   "Initializing Kernel...",
   "Loading Components...",
@@ -30,9 +30,9 @@ export default function BootLoader() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white">
-      <h1 className="text-6xl font-bold tracking-tight">
+      <Heading className="text-6xl font-bold tracking-tight">
         SAURABH OS
-      </h1>
+      </Heading>
 
       <BootMessage
         message={bootMessages[index]}
